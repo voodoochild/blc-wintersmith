@@ -1,0 +1,6 @@
+{
+  "name": "blacklionchest",
+  "dependencies": {
+    "_normalize.scss": "~2.1.3"
+  }
+}

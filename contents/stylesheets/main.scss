@@ -1,0 +1,36 @@
+/* main.css */
+
+@import '../../bower_components/_normalize.scss/_normalize';
+
+$compressed: true;
+$bodyText: Georgia, serif;
+$headingText: 'Helvetica Neue', Helvetica, Verdana, arial, sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $bodyText;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+div[role="container"] {
+  margin: 0 auto;
+  padding: 1em;
+  width: 320px;
+}
+
+h1, h2, h3 {
+  font-family: $headingText;
+}
+
+img {
+  width: 100%;
+}
+
+// @media (min-width: 1600px) {
+//
+// }
