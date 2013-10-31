@@ -1,0 +1,29 @@
+// Reset
+@import '../../bower_components/normalize-scss/_normalize';
+
+// Colours
+$foreground: #333;
+$faded: lighten($foreground, 50%);
+$background: #F0F0F0;
+$highlight: #DD1F3E;
+
+// Fonts
+$serif: "Adelle", Georgia, serif;
+$sans-serif: "mic-32-new-rounded-web", Helvetica, Verdana, arial, sans-serif;
+
+%type-1 { @include font($sans-serif, bold, 48, 58); }
+%type-2 { @include font($sans-serif, bold, 30, 36); }
+%type-3 { @include font($sans-serif, 300, 18, 18); }
+%type-4 { @include font($sans-serif, normal, 14, 16); }
+
+// Media queries
+$mq-responsive: true;
+$mq-breakpoints: (
+  (mobile   300px)
+  (tablet   600px)
+  (desktop  900px)
+  (wide     1260px)
+  (images   640px)
+);
+
+@import '../../bower_components/sass-mq/_mq';

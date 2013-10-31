@@ -1,36 +1,50 @@
-/* main.css */
-
-@import '../../bower_components/_normalize.scss/_normalize';
+@charset "UTF-8";
 
 $compressed: true;
-$bodyText: Georgia, serif;
-$headingText: 'Helvetica Neue', Helvetica, Verdana, arial, sans-serif;
+
+@import '_mixins';
+@import '_base';
+@import '_type';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: $bodyText;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.8;
+  background-color: $background;
 }
 
 div[role="container"] {
   margin: 0 auto;
   padding: 1em;
-  width: 320px;
-}
-
-h1, h2, h3 {
-  font-family: $headingText;
-}
-
-img {
   width: 100%;
+
+  @include mq($from: desktop) {
+    width: 800px;
+  }
 }
 
-// @media (min-width: 1600px) {
-//
-// }
+a {
+  border-bottom: 1px solid $faded;
+  @include transition(border-bottom-color .2s ease-in-out);
+}
+
+a:hover {
+  border-bottom-color: $highlight;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+figure {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+
+  @include mq($from: images) {
+    width: 600px;
+  }
+}

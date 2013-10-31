@@ -9,15 +9,20 @@ html(lang='en')
         block title
           = locals.name
       link(rel='stylesheet', href='/stylesheets/main.css')
+      script(type='text/javascript', src='//use.typekit.net/pjg7hsj.js')
+      script.
+        try{Typekit.load();}catch(e){}
   body(class=bodyclass)
     div(role='container')
       header.header
         block header
           div.logo
             h1
-              a(href=locals.url)= locals.name
+              a(href=locals.url, rel='home')= locals.name
       main
         block content
-      footer
+      footer#footer
         block footer
-          small &copy; #{ new Date().getFullYear() }
+          small
+            | &copy; #{ new Date().getFullYear() }&nbsp;
+            a(href='https://twitter.com/blacklionchest', rel='me') Black Lion Chest
