@@ -1,6 +1,6 @@
 ---
 title: Blood and Madness
-date: 2013-10-30
+date: 2013-10-31
 template: article.jade
 ---
 
