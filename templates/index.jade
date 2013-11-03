@@ -8,5 +8,5 @@ block content
           a(href=article.url)= article.title
       section.content
         p.date
-          span= moment.utc(article.date).format('LL')
+          span= moment().utc(article.date).format('LL')
         !{ typogr(article.html).typogrify() }

@@ -7,9 +7,14 @@ html {
 body {
   color: $foreground;
   font-size: 100%;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.5;
+
+  @include mq($from: desktop) {
+    font-size: 2em;
+    line-height: 2em;
+  }
 }
 
 ::selection {
@@ -32,6 +37,11 @@ h1 {
 
 h2 {
   @extend %type-2;
+}
+
+h1 a {
+  color: $foreground;
+  border: none;
 }
 
 a {
