@@ -43,14 +43,14 @@ figure {
   img {
     width: 100%;
   }
-
-  @include mq($from: images) {
-    width: 600px;
-  }
 }
 
-footer small a {
-  margin-left: .5em;
+#footer {
+  margin-top: 3em;
+
+  small a {
+    margin-left: .5em;
+  }
 }
 
 .typekit-badge {

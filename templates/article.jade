@@ -8,7 +8,7 @@ block header
   h1= page.title
 
 block content
-  article.article
+  article.post
     p.date
-      span= moment().utc(page.date).format('LL')
-    section.content!= typogr(page.html).typogrify()
+      span= moment(page.date).utc().format('LL')
+    section.post-body!= typogr(page.html).typogrify()

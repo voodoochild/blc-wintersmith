@@ -2,11 +2,14 @@ extends layout
 
 block content
   each article in articles
-    article.article.intro
+    article.post
       header
         h2
           a(href=article.url)= article.title
-      section.content
+      section.post-body
         p.date
-          span= moment().utc(article.date).format('LL')
-        !{ typogr(article.html).typogrify() }
+          span= moment(article.date).utc().format('LL')
+        !{ typogr(article.intro).typogrify() }
+        if article.hasMore
+          p.more
+            a(href=article.url) more
