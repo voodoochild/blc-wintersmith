@@ -1,4 +1,6 @@
 doctype 5
+block vars
+  - var bodyclass = null;
 html(lang='en')
   head
     block head
@@ -20,7 +22,7 @@ html(lang='en')
     div(role='container')
       header(role='banner')
         block header
-          h1
+          h1.blc
             a(href='/', rel='home')= locals.name
       main
         block content

@@ -4,7 +4,7 @@ block prepend title
   | #{ page.title + " | "}
 
 block header
-  a.brand(href='/', rel='home')= locals.name
+  a.branding.blc(href='/', rel='home')= locals.name
   h1= page.title
 
 block content
