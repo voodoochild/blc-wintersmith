@@ -26,6 +26,11 @@ div[role="container"] {
   }
 }
 
+#about {
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
 a {
   border-bottom: 1px solid $faded;
   @include transition(border-bottom-color .2s ease-in-out);
