@@ -1,14 +1,14 @@
 extends layout
 
 block prepend title
-  | #{ page.title + " – "}
+  | #{ page.title + " | "}
 
 block header
-  a.brand(href=locals.url, rel='home')= locals.name
+  a.brand(href='/', rel='home')= locals.name
   h1= page.title
 
 block content
   article.post
     p.date
-      span= moment(page.date).utc().format('LL')
+      span= moment(page.date).utc().format(locals.dateFormat)
     section.post-body!= typogr(page.html).typogrify()

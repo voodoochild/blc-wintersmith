@@ -7,6 +7,7 @@ $compressed: true;
 @import '_type';
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -53,6 +54,26 @@ figure {
   }
 }
 
+#pagination a {
+  margin-right: .5em;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .typekit-badge {
   display: none !important;
+}
+
+.twitter-follow-button {
+  display: block;
+  margin-top: 1em;
+
+  @include mq($from: tablet) {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 2em;
+    vertical-align: middle;
+  }
 }

@@ -21,16 +21,17 @@ html(lang='en')
       header(role='banner')
         block header
           h1
-            a(href=locals.url, rel='home')= locals.name
+            a(href='/', rel='home')= locals.name
       main
         block content
       footer#footer
         block footer
           small
-            | &copy; #{ new Date().getFullYear() }&nbsp;
-            a(href='https://twitter.com/blacklionchest', rel='me') Twitter
-            | &nbsp;
-            a(href='https://typekit.com/colophons/pjg7hsj', rel='nofollow', title='Fonts by Typekit') Colophon
+            | &copy; #{ new Date().getFullYear() }
+            a(href='/colophon.html') Colophon
+          a.twitter-follow-button(href='https://twitter.com/blacklionchest', data-show-count='false') Follow @blacklionchest
+    script.
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

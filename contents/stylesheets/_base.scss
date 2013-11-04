@@ -14,7 +14,7 @@ $sans-serif: "mic-32-new-rounded-web", Helvetica, Verdana, arial, sans-serif;
 %type-1 { @include font($sans-serif, bold, 48, 58); }
 %type-2 { @include font($sans-serif, bold, 30, 36); }
 %type-3 { @include font($sans-serif, 300, 18, 18); }
-%type-4 { @include font($sans-serif, normal, 14, 16); }
+%type-4 { @include font($sans-serif, normal, 14, 20); }
 
 // Media queries
 $mq-responsive: true;

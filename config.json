@@ -1,7 +1,8 @@
 {
   "locals": {
     "url": "http://blacklionchest.co.uk",
-    "name": "Black Lion Chest"
+    "name": "Black Lion Chest",
+    "dateFormat": "LL"
   },
   "plugins": [
     "wintersmith-sass",
@@ -20,6 +21,7 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 1,
+    "articles": "posts"
   }
 }

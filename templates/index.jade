@@ -8,8 +8,10 @@ block content
           a(href=article.url)= article.title
       section.post-body
         p.date
-          span= moment(article.date).utc().format('LL')
-        !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=article.url) more
+          span= moment(article.date).utc().format(locals.dateFormat)
+        !{ typogr(article.html).typogrify() }
+  nav#pagination
+    if nextPage
+      a(href=nextPage.url) « Older
+    if prevPage
+      a(href=prevPage.url) Newer »
