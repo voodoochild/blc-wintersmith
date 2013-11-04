@@ -71,6 +71,10 @@ small {
   font-size: 100%;
 }
 
+blockquote {
+  @extend %type-5;
+}
+
 #footer {
   @extend %type-4;
 }
