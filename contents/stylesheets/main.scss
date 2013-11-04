@@ -23,6 +23,18 @@ div[role="container"] {
 
   @include mq($from: desktop) {
     width: 800px;
+
+    &:before {
+      background-image: url(/images/chest.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      height: 100px;
+      position: absolute;
+      top: 15px;
+      left: -90px;
+      width: 100px;
+    }
   }
 }
 
@@ -67,31 +79,6 @@ figure {
     margin-right: 0;
   }
 }
-
-// .blc:after {
-//   background-image: url(/images/chest.png);
-//   background-repeat: no-repeat;
-//   background-size: 100%;
-//   content: '';
-//   display: none;
-//   float: right;
-//   height: 96px;
-//   position: absolute;
-//   top: 14px;
-//   right: 8px;
-//   width: 96px;
-
-//   @include mq($from: tablet) {
-//     display: block;
-//   }
-
-//   @include mq($from: desktop) {
-//     height: 144px;
-//     top: 0;
-//     right: 7px;
-//     width: 144px;
-//   }
-// }
 
 .typekit-badge {
   display: none !important;
