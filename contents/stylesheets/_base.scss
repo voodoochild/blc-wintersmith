@@ -4,18 +4,18 @@
 // Colours
 $foreground: #333;
 $faded: lighten($foreground, 50%);
-$background: #F0F0F0;
-$highlight: #DD1F3E;
+$background: #f0f0f0;
+$highlight: #dd1f3e;
 
 // Fonts
-$serif: "Adelle", Georgia, serif;
-$sans-serif: "mic-32-new-rounded-web", Helvetica, Verdana, arial, sans-serif;
+$body: "Adelle", serif;
+$fancy: "chaparral-pro", serif;
 
-%type-1 { @include font($sans-serif, bold, 48, 58); }
-%type-2 { @include font($sans-serif, bold, 30, 36); }
-%type-3 { @include font($sans-serif, 300, 18, 18); }
-%type-4 { @include font($sans-serif, normal, 14, 20); }
-%type-5 { @include font($serif, 300, 16, 26); }
+%type-1 { @include font($fancy, bold,   48, 58); }
+%type-2 { @include font($fancy, 600,    30, 36); }
+%type-3 { @include font($fancy, normal, 18, 18); }
+%type-4 { @include font($fancy, normal, 14, 20); }
+%type-5 { @include font($body,  300,    16, 26); }
 
 // Media queries
 $mq-responsive: true;

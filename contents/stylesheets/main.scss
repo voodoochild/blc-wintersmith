@@ -66,11 +66,12 @@ figure {
 
 blockquote {
   border-left: 0.3em solid $highlight;
-  margin-left: 0;
+  margin: 2em 0;
   padding-left: 1em;
 
   @include mq($from: tablet) {
     border-left-width: 0.5em;
+    margin-right: 5em;
   }
 }
 
