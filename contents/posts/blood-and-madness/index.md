@@ -7,7 +7,7 @@ template: article.jade
 I missed out on Halloween in Tyria the first time around because I was away on holiday, so welcomed its return with some anticipation. [Patch day][0] rolled around and I made my way to deepest, darkest Ascalon to dig around the Reliquary and make fun of Prince Thorn, collecting my handy–dandy Relay Golem on the way out. I enjoyed the ‘straight to the point’ exposition and thought that the characters of Thorn and Magister Tassi were decent enough.
 
 <figure class="pull">
-    ![Mad King’s Tower](mad-king-tower.jpg)
+    ![Mad King’s Tower](http://assets.blacklionchest.co.uk/images/mad-king-tower.jpg)
     <figcaption><q>Your Mad King says… [JUMP! JUMP!][1]</q></figcaption>
 </figure>
 
@@ -16,7 +16,7 @@ Next, I ran around Queensdale opening doors until I could enter the Mad King’s
 By far the most rewarding part of this patch, for me and many others, has been the levelling train charging around and around the labyrinth. My engineer was boosted from 60 to 80 in no time, and I had a brilliant time doing it. There’s just about the right level of difficulty present to keep players on their toes: trying to get around solo means getting pulled all over the place and rooted, and each champion boss has a mechanic that, if ignored, will cause zergs to die quickly.
 
 <figure class="push">
-    ![Bloody Prince Thorn](bloody-prince.jpg)
+    ![Bloody Prince Thorn](http://assets.blacklionchest.co.uk/images/bloody-prince.jpg)
     <figcaption>Bloody Prince ‘[I Was Made For Lovin’ You][3]’ Thorn</figcaption>
 </figure>
 
