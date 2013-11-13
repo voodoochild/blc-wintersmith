@@ -8,11 +8,16 @@ $background: #f0f0f0;
 $highlight: #dd1f3e;
 
 // Fonts
-$body: "Adelle", serif;
-$fancy: "chaparral-pro", serif;
+$body: serif;
+$fancy: serif;
+
+.wf-active {
+  $body: "Adelle", serif;
+  $fancy: "chaparral-pro", serif;
+}
 
 %type-1 { @include font($fancy, bold,   48, 58); }
-%type-2 { @include font($fancy, 600,    32    ); }
+%type-2 { @include font($fancy, 600,    36    ); }
 %type-3 { @include font($fancy, normal, 18    ); }
 %type-4 { @include font($fancy, normal, 16, 20); }
 %type-5 { @include font($body,  300,    16, 26); }

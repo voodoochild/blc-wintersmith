@@ -41,7 +41,7 @@ h2 {
   font-weight: 600;
 
   @include mq($from: tablet) {
-    @include font($fancy, 600, 32);
+    @include font($fancy, 600, 36);
   }
 }
 
