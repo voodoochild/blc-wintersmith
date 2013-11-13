@@ -22,7 +22,7 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3,
+    "perPage": 1,
     "articles": "posts"
   }
 }

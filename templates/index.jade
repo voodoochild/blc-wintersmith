@@ -7,6 +7,12 @@ block content
       articles and useful tools for other players. I currently play on [Aurora Glade](http://www.auroraglade.eu/),
       and built [Bounty Hunter](http://mythlan.co.uk/gw2/bountyhunter/).
 
+  nav#pagination
+    if nextPage
+      a(href=nextPage.url).older Older posts
+    if prevPage
+      a(href=prevPage.url).newer Newer posts
+
   each article in articles
     article.post
       header
@@ -16,8 +22,3 @@ block content
         p.date
           span= moment(article.date).utc().format(locals.dateFormat)
         !{ typogr(article.html).typogrify() }
-  nav#pagination
-    if nextPage
-      a(href=nextPage.url) « Older
-    if prevPage
-      a(href=prevPage.url) Newer »

@@ -12,10 +12,11 @@ $body: "Adelle", serif;
 $fancy: "chaparral-pro", serif;
 
 %type-1 { @include font($fancy, bold,   48, 58); }
-%type-2 { @include font($fancy, 600,    30, 36); }
-%type-3 { @include font($fancy, normal, 18, 18); }
+%type-2 { @include font($fancy, 600,    32    ); }
+%type-3 { @include font($fancy, normal, 18    ); }
 %type-4 { @include font($fancy, normal, 16, 20); }
 %type-5 { @include font($body,  300,    16, 26); }
+%type-6 { @include font($fancy, normal, 14    ); }
 
 // Media queries
 $mq-responsive: true;

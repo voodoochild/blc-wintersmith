@@ -46,14 +46,27 @@ div[role="container"] {
 a {
   border-bottom: 1px solid $faded;
   @include transition(border-bottom-color .2s ease-in-out);
+
+  &:hover {
+    border-bottom-color: $highlight;
+  }
 }
 
-a:hover {
-  border-bottom-color: $highlight;
+h2 a {
+  border-bottom: none;
+  color: $foreground;
 }
 
 p {
   margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 1em;
+
+  @include mq($from: tablet) {
+    padding-left: 2em;
+  }
 }
 
 figure {
@@ -87,16 +100,30 @@ blockquote {
   }
 }
 
-#pagination a {
-  margin-right: .5em;
+#pagination {
+  margin-bottom: 2em;
+  overflow: hidden;
 
-  &:last-child {
-    margin-right: 0;
+  a {
+    background-color: $faded;
+    border: none;
+    border-radius: 3px;
+    color: $background;
+    padding: 5px;
+    @include transition(background-color .2s ease-in-out);
+
+    &:hover {
+      background-color: darken($faded, 10%);
+    }
+
+    &.older {
+      float: left;
+    }
+
+    &.newer {
+      float: right;
+    }
   }
-}
-
-.typekit-badge {
-  display: none !important;
 }
 
 .twitter-follow-button {

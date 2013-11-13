@@ -30,12 +30,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @extend %type-1;
   margin-bottom: .5em;
+
+  @include mq($from: tablet) {
+    @include font($fancy, bold, 48, 58);
+  }
 }
 
 h2 {
-  @extend %type-2;
+  font-weight: 600;
+
+  @include mq($from: tablet) {
+    @include font($fancy, 600, 32);
+  }
 }
 
 h1 a {
@@ -62,9 +69,12 @@ figcaption {
 }
 
 p.date {
-  @extend %type-3;
   color: lighten($foreground, 50%);
-  text-transform: uppercase;
+  @include font($fancy, normal, 14);
+
+  @include mq($from: tablet) {
+   @include font($fancy, normal, 18);
+ }
 }
 
 small {
@@ -74,6 +84,10 @@ small {
 blockquote {
   @extend %type-5;
   font-style: italic;
+}
+
+#pagination a {
+  @extend %type-6;
 }
 
 #footer {
