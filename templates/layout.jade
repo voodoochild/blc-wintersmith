@@ -12,6 +12,7 @@ html(lang='en')
       title
         block title
           = locals.name
+      link(rel='dns-prefetch', href='http://assets.blacklionchest.co.uk')
       link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
       link(rel='stylesheet', href='/stylesheets/main.css')
       script(type='text/javascript', src='/javascripts/modernizr.js')
