@@ -60,6 +60,17 @@ a {
   font-weight: 400;
 }
 
+.attribution {
+  @extend %type-4;
+  font-style: italic;
+
+  a {
+    color: $foreground;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
 b, strong {
   font-weight: 400;
 }
