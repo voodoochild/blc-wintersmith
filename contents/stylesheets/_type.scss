@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+h1, .site-name {
+  display: block;
   margin-bottom: .5em;
 
   @include mq($from: tablet) {
@@ -37,7 +38,7 @@ h1 {
   }
 }
 
-h2 {
+h2, .article-title {
   font-weight: 600;
 
   @include mq($from: tablet) {
@@ -45,7 +46,7 @@ h2 {
   }
 }
 
-h1 a {
+h1 a, .site-name {
   color: $foreground;
   border: none;
 }
@@ -86,7 +87,7 @@ blockquote {
   font-style: italic;
 }
 
-#pagination a {
+nav a {
   @extend %type-6;
 }
 

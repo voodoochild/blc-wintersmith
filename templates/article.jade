@@ -4,7 +4,8 @@ block prepend title
   | #{ page.title + " | "}
 
 block header
-  h1= page.title
+  a(href='/', rel='home').site-name= locals.name
+  h1.article-title= page.title
 
 block content
   article.post
@@ -12,4 +13,4 @@ block content
       span= moment(page.date).utc().format(locals.dateFormat)
     section.post-body!= typogr(page.html).typogrify()
   nav
-    a(href='/', rel='home') ← Black Lion Chest
+    a(href='/', rel='home') More posts
