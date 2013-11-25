@@ -7,7 +7,7 @@ template: article.jade
 I missed out on Halloween in Tyria the first time around because I was away on holiday, so welcomed its return with some anticipation. [Patch day][0] rolled around and I made my way to deepest, darkest Ascalon to dig around the Reliquary and make fun of Prince Thorn, collecting my handy–dandy Relay Golem on the way out. I enjoyed the ‘straight to the point’ exposition and thought that the characters of Thorn and Magister Tassi were decent enough.
 
 <figure class="pull">
-    ![Mad King’s Tower](http://assets.blacklionchest.co.uk/images/mad-king-tower.jpg)
+    ![Mad King’s Tower](http://assets.blacklionchest.co.uk/images/mad-kings-tower.jpg)
     <figcaption><q>Your Mad King says… [JUMP! JUMP!][1]</q></figcaption>
 </figure>
 
