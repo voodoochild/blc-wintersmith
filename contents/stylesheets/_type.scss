@@ -56,10 +56,6 @@ a {
   text-decoration: none;
 }
 
-.post-body a {
-  font-weight: 600;
-}
-
 .attribution {
   @extend %type-4;
   font-style: italic;
@@ -67,7 +63,7 @@ a {
   a {
     color: $foreground;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -82,15 +78,11 @@ figcaption {
 
 p.date {
   color: lighten($foreground, 50%);
-  @include font($fancy, normal, 14);
+  @include font($fancy, 400, 14);
 
   @include mq($from: tablet) {
-   @include font($fancy, normal, 18);
+   @include font($fancy, 400, 18);
  }
-}
-
-p.lead {
-  font-weight: 600;
 }
 
 small {
