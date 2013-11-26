@@ -8,20 +8,21 @@ $background: #f0f0f0;
 $highlight: #dd1f3e;
 
 // Fonts
-$body: serif;
-$fancy: serif;
+$serif: serif;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
 
 .wf-active {
-  $body: "jaf-facitweb", arial, sans-serif;
-  $fancy: "chaparral-pro", serif;
+  $serif: "chaparral-pro", georgia, serif;
 }
 
-%type-1 { @include font($fancy, 700, 48, 58); }
-%type-2 { @include font($fancy, 600, 36, 36); }
-%type-3 { @include font($fancy, 400, 18, 18); }
-%type-4 { @include font($fancy, 400, 16, 20); }
-%type-5 { @include font($body,  300, 16, 26); }
-%type-6 { @include font($fancy, 400, 14, 14); }
+%type-1 { @include font($serif, $bold,     48, 58); }
+%type-2 { @include font($serif, $semibold, 36, 36); }
+%type-3 { @include font($serif, $normal,   18, 18); }
+%type-4 { @include font($serif, $normal,   16, 20); }
+%type-5 { @include font($serif, $normal,   16, 26); }
+%type-6 { @include font($serif, $normal,   14, 14); }
 
 // Media queries
 $mq-responsive: true;

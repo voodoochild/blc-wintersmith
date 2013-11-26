@@ -1,18 +1,18 @@
 html {
   font-size: 62.5%;
   font-size: (10/16)*1em;
-  font-family: $body;
+  font-family: $serif;
 }
 
 body {
   color: $foreground;
   font-size: 100%;
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: 300;
   line-height: 1.5;
 
   @include mq($from: desktop) {
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.8em;
   }
 }
@@ -23,7 +23,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $fancy;
+  font-family: $serif;
   text-rendering: optimizeLegibility;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ h1, .site-name {
   margin-bottom: .5em;
 
   @include mq($from: tablet) {
-    @include font($fancy, bold, 48, 58);
+    @include font($serif, $bold, 48, 58);
   }
 }
 
@@ -42,7 +42,7 @@ h2, .article-title {
   font-weight: 600;
 
   @include mq($from: tablet) {
-    @include font($fancy, 600, 36);
+    @include font($serif, $bold, 36);
   }
 }
 
@@ -63,7 +63,7 @@ a {
   a {
     color: $foreground;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $bold;
   }
 }
 
@@ -78,10 +78,10 @@ figcaption {
 
 p.date {
   color: lighten($foreground, 50%);
-  @include font($fancy, 400, 14);
+  @include font($serif, $normal, 14);
 
   @include mq($from: tablet) {
-   @include font($fancy, 400, 18);
+   @include font($serif, $normal, 18);
  }
 }
 
