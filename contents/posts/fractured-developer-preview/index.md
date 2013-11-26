@@ -6,7 +6,9 @@ template: article.jade
 
 <img src="http://assets.blacklionchest.co.uk/images/fractured.png" alt="" width="100%" />
 
-<p class="lead">Here are my rough notes made while watching the [developer preview](http://www.twitch.tv/guildwars2) of the ‘[Fractured](https://www.guildwars2.com/en/the-game/releases/november-26-2013/)’ patch, dropping tomorrow, November 26. I'm hopeful that the new content and changes to the existing Fractals of the Mists system will reinvigorate the community around them; I’ll definitely be in there trying to get my level up tomorrow evening. The return of the Molten Facility and the Aetherblade Retreat pave the way for much–loved Living Story content to have its lifespan extended, which is definitely a good thing. Eventually, I foresee some of the original instances being retired (I’m looking at you, Dredge fractal) to make room, which would help to keep things fresh and interesting. [Let me know](https://twitter.com/blacklionchest) what you think, and I hope to see you in there!</p>
+<p class="lead">Here are my rough notes from the [developer preview](http://www.twitch.tv/guildwars2) of the ‘[Fractured](https://www.guildwars2.com/en/the-game/releases/november-26-2013/)’ patch, dropping tomorrow, November 26. I'm hopeful that the new content and changes to the existing Fractals of the Mists system will reinvigorate the community around them; I’ll definitely be in there trying to get my level up tomorrow evening.</p>
+
+The return of the Molten Facility and the Aetherblade Retreat pave the way for much–loved Living Story content to have its lifespan extended, which is definitely a good thing. Eventually, I foresee some of the original instances being retired (I’m looking at you, Dredge fractal) to make room, which would help to keep things fresh and interesting. [Let me know](https://twitter.com/blacklionchest) what you think, and I hope to see you in there!
 
 ---
 
