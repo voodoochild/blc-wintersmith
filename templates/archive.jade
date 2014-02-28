@@ -1,0 +1,12 @@
+extends layout
+
+block prepend title
+  | #{ "Archive | "}
+
+block content
+  - var articles = env.helpers.getArticles(contents)
+  ul.archive
+    each item in articles
+      li
+        a(href=item.url)=item.title
+        span.posted=moment(item.date).utc().format(locals.dateFormat)

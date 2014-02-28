@@ -164,3 +164,27 @@ p.date {
 p + h2 {
   margin-top: 2em;
 }
+
+ul.archive {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    clear: both;
+  }
+
+  li + li {
+    margin-top: .5em;
+  }
+
+  .posted {
+    color: $faded;
+    float: right;
+    @include font-size(16, 30);
+
+    @include mq($from: tablet) {
+      @include font-size(16, 40);
+    }
+  }
+}

@@ -10,7 +10,7 @@ block header
 block content
   article.post
     p.date
-      span= moment(page.date).utc().format(locals.dateFormat)
+      span=moment(page.date).utc().format(locals.dateFormat)
     section.post-body!= typogr(page.html).typogrify()
   nav
     a(href='/', rel='home') More posts
