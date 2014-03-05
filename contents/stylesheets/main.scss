@@ -180,11 +180,18 @@ ul.archive {
 
   .posted {
     color: $faded;
-    float: right;
+    display: block;
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
     @include font-size(16, 30);
 
     @include mq($from: tablet) {
       @include font-size(16, 40);
+      display: inline-block;
+      float: right;
+      margin-bottom: 0;
+      width: auto;
     }
   }
 }
