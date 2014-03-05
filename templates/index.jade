@@ -6,7 +6,7 @@ block content
       This [Guild Wars 2](https://www.guildwars2.com/en/) fan–site aims to provide interesting
       articles and useful tools for other players.
 
-  nav#pagination
+  nav
     if nextPage
       a(href=nextPage.url).older Older posts
     if prevPage
@@ -21,3 +21,9 @@ block content
         p.date
           span= moment(article.date).utc().format(locals.dateFormat)
         !{ typogr(article.html).typogrify() }
+
+  nav
+    if nextPage
+      a(href=nextPage.url).older Older posts
+    if prevPage
+      a(href=prevPage.url).newer Newer posts
