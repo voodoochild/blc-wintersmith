@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       },
 
       publish: {
-        command: 'scp -r build/* kw@mythlan.co.uk:/var/www/blacklionchest.co.uk'
+        command: 'scp -r build/* blacklionchest:~/blacklionchest_www'
       }
     }
   });
